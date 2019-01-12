@@ -7,7 +7,8 @@
 //
 
 #import "ViewController.h"
-
+#import "ICKCustomTextView.h"
+#import "UIColor+CZAddition.h"
 @interface ViewController ()
 
 @end
@@ -16,7 +17,14 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    self.view.backgroundColor = [UIColor cz_ToUIColorByStr:@"FFFCE4"];
+    ICKCustomTextView *view = [[ICKCustomTextView alloc]init];
+    view.frame = CGRectMake(50, 100, 300, 300);
+    view.backgroundColor = self.view.backgroundColor;
+    view.placeHolderLabel.text = @"写一个便签@需要知道的人";
+    
+    [self.view addSubview:view];
+
 }
 
 

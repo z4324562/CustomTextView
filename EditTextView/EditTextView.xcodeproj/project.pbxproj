@@ -13,6 +13,9 @@
 		0024199C21E6EC0500BBD3CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0024199B21E6EC0500BBD3CB /* Assets.xcassets */; };
 		0024199F21E6EC0500BBD3CB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0024199D21E6EC0500BBD3CB /* LaunchScreen.storyboard */; };
 		002419A221E6EC0500BBD3CB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 002419A121E6EC0500BBD3CB /* main.m */; };
+		002419AA21E6ED1D00BBD3CB /* ICKCustomTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 002419A921E6ED1D00BBD3CB /* ICKCustomTextView.m */; };
+		002419AE21E7201000BBD3CB /* UIColor+CZAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 002419AC21E7201000BBD3CB /* UIColor+CZAddition.m */; };
+		F4C0E943F2C05AE1D6033613 /* libPods-EditTextView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FE45E0E4905D1F07ABB3770E /* libPods-EditTextView.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,13 @@
 		0024199E21E6EC0500BBD3CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		002419A021E6EC0500BBD3CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		002419A121E6EC0500BBD3CB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		002419A821E6ED1D00BBD3CB /* ICKCustomTextView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ICKCustomTextView.h; sourceTree = "<group>"; };
+		002419A921E6ED1D00BBD3CB /* ICKCustomTextView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ICKCustomTextView.m; sourceTree = "<group>"; };
+		002419AC21E7201000BBD3CB /* UIColor+CZAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+CZAddition.m"; sourceTree = "<group>"; };
+		002419AD21E7201000BBD3CB /* UIColor+CZAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+CZAddition.h"; sourceTree = "<group>"; };
+		5A977088FDA36E164183E361 /* Pods-EditTextView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EditTextView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EditTextView/Pods-EditTextView.debug.xcconfig"; sourceTree = "<group>"; };
+		AD8B8E67E79F11BB31567027 /* Pods-EditTextView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EditTextView.release.xcconfig"; path = "Pods/Target Support Files/Pods-EditTextView/Pods-EditTextView.release.xcconfig"; sourceTree = "<group>"; };
+		FE45E0E4905D1F07ABB3770E /* libPods-EditTextView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-EditTextView.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4C0E943F2C05AE1D6033613 /* libPods-EditTextView.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +55,8 @@
 			children = (
 				0024199121E6EC0300BBD3CB /* EditTextView */,
 				0024199021E6EC0300BBD3CB /* Products */,
+				FED1F34820F196585B3DAEFF /* Pods */,
+				E1040D156C47EACCA05965CE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,10 +71,13 @@
 		0024199121E6EC0300BBD3CB /* EditTextView */ = {
 			isa = PBXGroup;
 			children = (
+				002419AB21E7200F00BBD3CB /* Other */,
 				0024199221E6EC0300BBD3CB /* AppDelegate.h */,
 				0024199321E6EC0300BBD3CB /* AppDelegate.m */,
 				0024199521E6EC0300BBD3CB /* ViewController.h */,
 				0024199621E6EC0300BBD3CB /* ViewController.m */,
+				002419A821E6ED1D00BBD3CB /* ICKCustomTextView.h */,
+				002419A921E6ED1D00BBD3CB /* ICKCustomTextView.m */,
 				0024199821E6EC0300BBD3CB /* Main.storyboard */,
 				0024199B21E6EC0500BBD3CB /* Assets.xcassets */,
 				0024199D21E6EC0500BBD3CB /* LaunchScreen.storyboard */,
@@ -71,6 +87,32 @@
 			path = EditTextView;
 			sourceTree = "<group>";
 		};
+		002419AB21E7200F00BBD3CB /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				002419AD21E7201000BBD3CB /* UIColor+CZAddition.h */,
+				002419AC21E7201000BBD3CB /* UIColor+CZAddition.m */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		E1040D156C47EACCA05965CE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FE45E0E4905D1F07ABB3770E /* libPods-EditTextView.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FED1F34820F196585B3DAEFF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5A977088FDA36E164183E361 /* Pods-EditTextView.debug.xcconfig */,
+				AD8B8E67E79F11BB31567027 /* Pods-EditTextView.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -78,6 +120,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 002419A521E6EC0500BBD3CB /* Build configuration list for PBXNativeTarget "EditTextView" */;
 			buildPhases = (
+				38DFFC031B002D7735432A0E /* [CP] Check Pods Manifest.lock */,
 				0024198B21E6EC0300BBD3CB /* Sources */,
 				0024198C21E6EC0300BBD3CB /* Frameworks */,
 				0024198D21E6EC0300BBD3CB /* Resources */,
@@ -136,11 +179,34 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		38DFFC031B002D7735432A0E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EditTextView-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0024198B21E6EC0300BBD3CB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				002419AE21E7201000BBD3CB /* UIColor+CZAddition.m in Sources */,
+				002419AA21E6ED1D00BBD3CB /* ICKCustomTextView.m in Sources */,
 				0024199721E6EC0300BBD3CB /* ViewController.m in Sources */,
 				002419A221E6EC0500BBD3CB /* main.m in Sources */,
 				0024199421E6EC0300BBD3CB /* AppDelegate.m in Sources */,
@@ -281,10 +347,13 @@
 		};
 		002419A621E6EC0500BBD3CB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5A977088FDA36E164183E361 /* Pods-EditTextView.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = EditTextView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -297,10 +366,13 @@
 		};
 		002419A721E6EC0500BBD3CB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AD8B8E67E79F11BB31567027 /* Pods-EditTextView.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = EditTextView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
